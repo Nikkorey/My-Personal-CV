@@ -1,0 +1,14 @@
+@import "../COMPONENTS/01-Comp_Variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  max-width: 1024px;
+  letter-spacing: 1.2px;
+  background-color: darken($light-c, 10%);
+}
