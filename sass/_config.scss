@@ -1,14 +1,23 @@
 @import "../COMPONENTS/01-Comp_Variables";
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
 body {
   max-width: 1024px;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 1.2px;
   background-color: darken($light-c, 10%);
+  margin: auto;
+}
+
+hr {
+  margin: 2rem auto;
 }

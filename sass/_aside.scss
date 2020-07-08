@@ -1,0 +1,40 @@
+#aside-area {
+  background-color: $light-c;
+  width: 100%;
+
+  // @include BoxShadow(60);
+
+  .photo {
+    height: 200px;
+    width: 100%;
+    background-image: url(/img/Profile_photo_about2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    label {
+      position: relative;
+      top: 70%;
+      left: 15%;
+      font-weight: 500;
+      color: $light-c;
+    }
+  }
+
+  .personal-info {
+    margin-top: 1.5rem;
+    li {
+      i {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+  .personal_social {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    i {
+      padding: 1rem;
+    }
+  }
+}

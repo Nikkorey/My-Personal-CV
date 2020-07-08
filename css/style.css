@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  max-width: 1024px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1.2px;
+  background-color: #e6e1d8;
+  margin: auto;
+}
+
+hr {
+  margin: 2rem auto;
+}
+
+.icon_default {
+  color: #339af0;
+}
+
+#main-area {
+  grid-area: main;
+}
+
+#section-area_top {
+  grid-area: section_top;
+}
+
+#section-area_bot {
+  grid-area: section_bot;
+}
+
+#aside-area {
+  grid-area: aside;
+}
+
+#footer-area {
+  grid-area: footer;
+}
+
+.hover:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#main-area {
+  display: -ms-grid;
+  display: grid;
+  grid-template: "aside section_top" auto "aside section_bot" auto "footer footer" 10vh / 30% auto;
+  gap: 10px;
+}
+
+#aside-area {
+  background-color: #faf9f7;
+  width: 100%;
+}
+
+#aside-area .photo {
+  height: 200px;
+  width: 100%;
+  background-image: url(/img/Profile_photo_about2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#aside-area .photo label {
+  position: relative;
+  top: 70%;
+  left: 15%;
+  font-weight: 500;
+  color: #faf9f7;
+}
+
+#aside-area .personal-info {
+  margin-top: 1.5rem;
+}
+
+#aside-area .personal-info li i {
+  padding: 0.5rem 1rem;
+}
+
+#aside-area .personal_social {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#aside-area .personal_social i {
+  padding: 1rem;
+}

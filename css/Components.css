@@ -1,0 +1,87 @@
+.text-xl {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.text-lg {
+  font-size: 1.5rem;
+  padding: 0.75rem;
+}
+
+.text-md {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.text-sm {
+  font-size: 0.6rem;
+  padding: 0.3rem;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.UP {
+  text-transform: uppercase;
+}
+
+.tp-0_5 {
+  padding: 0.5rem;
+}
+
+.tp-1 {
+  padding: 1rem;
+}
+
+.tp-1_5 {
+  padding: 1.5rem;
+}
+
+.tp-2 {
+  padding: 2rem;
+}
+
+.tp-2_5 {
+  padding: 2.5rem;
+}
+
+.tp-3 {
+  padding: 3rem;
+}
+
+.tm-0_5 {
+  margin: 0.5rem;
+}
+
+.tm-1 {
+  margin: 1rem;
+}
+
+.tm-1_5 {
+  margin: 1.5rem;
+}
+
+.tm-2 {
+  margin: 2rem;
+}
+
+.tm-2_5 {
+  margin: 2.5rem;
+}
+
+.tm-3 {
+  margin: 3rem;
+}
+
+.tm-3_5 {
+  margin: 3.5rem;
+}

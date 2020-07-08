@@ -1,0 +1,38 @@
+// Main Grid Area Mixin
+
+$Grid-Area_Map: (
+  "main-area": main,
+  "section-area_top": section_top,
+  "section-area_bot": section_bot,
+  "aside-area": aside,
+  "footer-area": footer,
+);
+
+// Create Area Id's
+
+@each $area_name, $area_value in $Grid-Area_Map {
+  ##{$area_name} {
+    grid-area: $area_value;
+  }
+}
+
+@mixin GridTemplate {
+  grid-template:
+    "aside section_top" auto
+    "aside section_bot" auto
+    "footer footer" 10vh
+    / 30% auto;
+}
+
+// Shadow Mixin
+// @mixin BoxShadow($amount: 10%) {
+//   box-shadow: 0 0 15px 2px lighten($color: #111, $amount);
+// }
+
+@mixin opacity($opac: 0.5) {
+  opacity: $opac;
+}
+.hover:hover {
+  cursor: pointer;
+  @include opacity;
+}
