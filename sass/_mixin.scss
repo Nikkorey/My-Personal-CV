@@ -36,3 +36,26 @@ $Grid-Area_Map: (
   cursor: pointer;
   @include opacity;
 }
+
+// Function Set Text Color base on Bg-Color
+@function set-text-c($bc-c) {
+  @if (lightness($bc-c) > 49) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+@mixin Placeholder($bc-c, $amount) {
+  border: none;
+  border-radius: 5px;
+  &::placeholder {
+    background-color: $bc-c;
+    font-weight: bold;
+    color: set-text-c($bc-c);
+    position: relative;
+    right: $amount;
+    text-align: right;
+    padding-right: 0.2rem;
+  }
+}

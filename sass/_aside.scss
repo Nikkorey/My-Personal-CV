@@ -37,4 +37,53 @@
       padding: 1rem;
     }
   }
+
+  .skills {
+    .skill {
+      display: flex;
+      flex-direction: column;
+      font-size: bold;
+    }
+    .fab {
+      padding-right: 1rem;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .js {
+      $color: $js;
+      i {
+        color: $color;
+      }
+      input {
+        @include Placeholder($color, 1%);
+      }
+    }
+    .react {
+      $color: $react;
+      i {
+        color: $color;
+      }
+      input {
+        @include Placeholder($color, 30%);
+      }
+    }
+    .vue {
+      $color: $vuejs;
+      i {
+        color: $color;
+      }
+      input {
+        @include Placeholder($color, 30%);
+      }
+    }
+    .angular {
+      $color: $angular;
+      i {
+        color: $color;
+      }
+      input {
+        @include Placeholder($color, 80%);
+      }
+    }
+  }
 }
