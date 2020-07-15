@@ -1,0 +1,17 @@
+#section-area_top {
+  width: 100%;
+  height: 100%;
+  background-color: $light-c;
+  @include BoxShadow(60);
+  .work_experience {
+    margin: 1rem;
+    &-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+      i {
+        font-size: 2rem;
+      }
+    }
+  }
+}

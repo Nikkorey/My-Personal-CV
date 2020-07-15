@@ -5,7 +5,7 @@
   list-style: none;
   text-decoration: none;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 16px;
 }
 
@@ -53,7 +53,11 @@ hr {
 #main-area {
   display: -ms-grid;
   display: grid;
-  grid-template: "aside section_top" auto "aside section_bot" auto "footer footer" 10vh / 30% auto;
+  grid-template:
+    "aside section_top" auto
+    "aside section_bot" auto
+    "footer footer" 10vh
+    / 30% auto;
   gap: 10px;
 }
 
@@ -93,8 +97,8 @@ hr {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 #aside-area .personal_social i {
@@ -107,8 +111,8 @@ hr {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   font-size: bold;
 }
 
@@ -310,6 +314,113 @@ hr {
   color: #fff;
   position: relative;
   right: 80%;
+  text-align: right;
+  padding-right: 0.2rem;
+}
+
+#aside-area .languages .language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+#aside-area .languages .fas {
+  padding-right: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#aside-area .languages .en input {
+  border: none;
+  border-radius: 5px;
+}
+
+#aside-area .languages .en input::-webkit-input-placeholder {
+  background-color: #11a2b2;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  right: 20%;
+  text-align: right;
+  padding-right: 0.2rem;
+}
+
+#aside-area .languages .en input:-ms-input-placeholder {
+  background-color: #11a2b2;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  right: 20%;
+  text-align: right;
+  padding-right: 0.2rem;
+}
+
+#aside-area .languages .en input::-ms-input-placeholder {
+  background-color: #11a2b2;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  right: 20%;
+  text-align: right;
+  padding-right: 0.2rem;
+}
+
+#aside-area .languages .en input::placeholder {
+  background-color: #11a2b2;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  right: 20%;
+  text-align: right;
+  padding-right: 0.2rem;
+}
+
+#aside-area .languages .tag input {
+  border: none;
+  border-radius: 5px;
+}
+
+#aside-area .languages .tag input::-webkit-input-placeholder {
+  background-color: #22aa44;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  right: 1%;
+  text-align: right;
+  padding-right: 0.2rem;
+}
+
+#aside-area .languages .tag input:-ms-input-placeholder {
+  background-color: #22aa44;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  right: 1%;
+  text-align: right;
+  padding-right: 0.2rem;
+}
+
+#aside-area .languages .tag input::-ms-input-placeholder {
+  background-color: #22aa44;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  right: 1%;
+  text-align: right;
+  padding-right: 0.2rem;
+}
+
+#aside-area .languages .tag input::placeholder {
+  background-color: #22aa44;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  right: 1%;
   text-align: right;
   padding-right: 0.2rem;
 }

@@ -86,4 +86,36 @@
       }
     }
   }
+  .languages {
+    .language {
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+    }
+    .fas {
+      padding-right: 1rem;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .en {
+      $color: $info-c;
+      input {
+        @include Placeholder($color, 20%);
+      }
+    }
+    .tag {
+      $color: $success-c;
+      input {
+        @include Placeholder($color, 1%);
+      }
+    }
+  }
+
+  .hobbies {
+    .hobbie {
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+    }
+  }
 }
